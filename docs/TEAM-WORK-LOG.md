@@ -38,4 +38,4 @@ Current status: topic not approved yet.
 
 ## GitHub evidence
 
-Repository: [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). Hosted CI result: pending verification after the initial push. Member PR/review links: not supplied. Add real links once those actions occur. Existing local baseline commits were created by Codex; they are not evidence of four-person collaboration.
+Repository: [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). Hosted CI: backend and frontend passed for source revision `d088dd9` in [Actions run 39412425563](https://github.com/microwaveTuesday/CampusShelf/actions/runs/39412425563) on 20 October 2026. Member PR/review links: not supplied. Add real links once those actions occur. Existing local baseline commits were created by Codex; they are not evidence of four-person collaboration.

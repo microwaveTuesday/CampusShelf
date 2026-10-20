@@ -59,7 +59,7 @@ Screenshots under `docs/screenshots/` contain synthetic names and ordinary book 
 
 Run `python scripts/dev.py start`, then follow the README verification commands. The automated suite creates and drops only its own newly named `campusshelf_test_...` database. Keep normal demo data separate. The normal app's provider base URL is official Open Library; a development-only override allows the test HTTP provider. Production rejects nonofficial provider URLs.
 
-The team has created [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). Hosted CI results must be verified after publication; the local results above must not be described as hosted CI success. Actual teammate reviews, contributions and oral-defense outcomes remain team responsibilities.
+The project is published at [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). On 20 October 2026, [Actions run 39412425563](https://github.com/microwaveTuesday/CampusShelf/actions/runs/39412425563) completed both backend and frontend jobs successfully for revision `d088dd90716196433aac1f58781928fcf5736825`. The backend job built the project, checked migration drift, ran the real PostgreSQL integration suite and listed dependency vulnerabilities; the frontend job installed locked dependencies and passed lint, TypeScript/production build and npm audit. Later documentation-only changes recording this result do not alter runtime code. Actual teammate reviews, contributions and oral-defense outcomes remain team responsibilities.
 
 ## Remaining limits
 

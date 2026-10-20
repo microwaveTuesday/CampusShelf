@@ -7,7 +7,8 @@
 | Team | Eugene Ricafort, Arjei Lacayanga, John Lei Madrona, John Gilbert Sevilla |
 | Instructor approval | Pending — team confirms not approved yet |
 | Deadline | None provided |
-| Shared GitHub repository | [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf); initial publication in progress |
+| Shared GitHub repository | [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf); initial source and team pack published on main |
+| Initial hosted checks | Backend and frontend passed in [Actions run 39412425563](https://github.com/microwaveTuesday/CampusShelf/actions/runs/39412425563) |
 | Technical foundation | Built; prior local verification is in VERIFICATION.md |
 | Individual work evidence | Not supplied yet; proposed areas are not completed contributions |
 | Second-machine setup and team rehearsal | Not recorded yet |
