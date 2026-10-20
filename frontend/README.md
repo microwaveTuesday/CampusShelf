@@ -1,32 +1,16 @@
-# React + TypeScript + Vite
+# CampusShelf frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React 19, TypeScript, Axios and Vite. Main setup and accounts are documented in [the project README](../README.md).
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```text
+npm ci
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open http://127.0.0.1:5178 . API and Swagger requests proxy to http://127.0.0.1:5088 . Start PostgreSQL and the backend first, normally using `python scripts/dev.py start` from the repository root.
+
+`src/pages/` contains role-aware overview, catalog, circulation, import and account screens. `src/components/` contains shared accessible controls and book dialogs. `src/api.ts` configures Axios and in-memory bearer authentication. `src/types.ts` documents the response shapes. No business records are hardcoded in the frontend; all catalog, availability, borrowing and account data comes from the API.
+
+Run `npm run lint`, `npm run format:check` and `npm run build` before submitting. Production output is `dist/`; it needs HTTPS hosting with a same-origin API reverse proxy. `vite preview` alone is not an application deployment. Fonts use online Google Fonts with local fallbacks; decorative book graphics are CSS. No third-party cover image needs to load for core use.
+
+Page reload intentionally clears the memory-only token; PostgreSQL records remain. There is no browser-local mock database or saved JWT. UI restrictions are usability features; authorization is enforced separately on the server.
