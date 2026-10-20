@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/test-results/
+**/playwright-report/
+.runtime/
+.env
+*.user
+*.log
+*.zip
+**/appsettings.Local.json
+**/__pycache__/
