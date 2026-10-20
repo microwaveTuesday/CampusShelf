@@ -4,6 +4,8 @@ A campus library borrowing system built for the Integrative Programming 1 midter
 
 Students discover titles, request a physical copy and track their own loans. Librarians approve requests, check out copies and record returns. Admins also manage account access and delete unused titles. Loan history is protected; a returned copy becomes available again.
 
+Repository: [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). Instructor approval is pending. Team: Eugene Ricafort, Arjei Lacayanga, John Lei Madrona and John Gilbert Sevilla.
+
 ![CampusShelf dashboard](docs/screenshots/dashboard.png)
 
 ## Quick start on this Windows computer
@@ -95,6 +97,10 @@ CI uses PostgreSQL 17 and repeats the API/database suite, migration-drift check,
 
 ## Documents and midterm submission
 
+- [Submission preparation pack and current team status](docs/SUBMISSION-PACK.md)
+- [Concise proposal for instructor approval](docs/PROPOSAL-FOR-APPROVAL.md)
+- [Individual defense preparation](docs/DEFENSE-GUIDE.md)
+- [Actual contribution and rehearsal log](docs/TEAM-WORK-LOG.md)
 - [Proposal, requirements, team assignment and AI disclosure](docs/PROPOSAL-AND-REQUIREMENTS.md)
 - [Architecture, use cases, ERD and sequence/state diagrams](docs/ARCHITECTURE.md)
 - [API and authorization rules](docs/API.md)
@@ -106,4 +112,4 @@ CI uses PostgreSQL 17 and repeats the API/database suite, migration-drift check,
 
 This is a tested classroom foundation, not an approved institutional production service. Demonstration data is synthetic. Students self-register without institutional identity verification. No fines, email delivery, password recovery, uploads or automatic reservation expiration are implemented. Requested/Ready copies remain reserved until staff or the borrower cancels them. Login limits and provider cache/rate coordination are per API process. Multi-server abuse protection, public HTTPS deployment, backup/restore operations and load testing remain future work. A database connection check does not establish that all migrations are applied; follow the migration commands. Fonts use Google Fonts when reachable, with local font fallbacks.
 
-The team must still supply real names/contributions, obtain proposal approval, publish meaningful shared GitHub history and perform the individual oral defense. Software alone cannot establish those rubric requirements or guarantee a grade.
+The roster is recorded; the team must still document actual contributions, obtain proposal approval, develop meaningful shared GitHub history and perform the individual oral defense. Software alone cannot establish those rubric requirements or guarantee a grade.

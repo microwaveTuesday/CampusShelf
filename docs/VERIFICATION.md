@@ -59,7 +59,7 @@ Screenshots under `docs/screenshots/` contain synthetic names and ordinary book 
 
 Run `python scripts/dev.py start`, then follow the README verification commands. The automated suite creates and drops only its own newly named `campusshelf_test_...` database. Keep normal demo data separate. The normal app's provider base URL is official Open Library; a development-only override allows the test HTTP provider. Production rejects nonofficial provider URLs.
 
-CI is committed but has not been pushed or executed on GitHub in this task. Local successful runs must not be described as hosted CI success. Actual teammate reviews, contributions and oral-defense outcomes remain team responsibilities.
+The team has created [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). Hosted CI results must be verified after publication; the local results above must not be described as hosted CI success. Actual teammate reviews, contributions and oral-defense outcomes remain team responsibilities.
 
 ## Remaining limits
 

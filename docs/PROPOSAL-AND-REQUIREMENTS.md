@@ -2,6 +2,15 @@
 
 Proposal draft for instructor review. Approval has not been obtained by this software.
 
+## Team and approval status
+
+- Eugene Ricafort
+- Arjei Lacayanga
+- John Lei Madrona
+- John Gilbert Sevilla
+
+Instructor approval: pending; the team reports the topic has not yet been approved. Submission deadline: none provided. Shared GitHub repository: [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf). A working AI-assisted foundation already exists; do not represent this proposal as having been approved before that work. Use [the concise approval proposal](PROPOSAL-FOR-APPROVAL.md) for the instructor's review.
+
 ## Problem and users
 
 A small campus library needs to identify available physical book copies, track student requests and record which copy is checked out to whom. A spreadsheet or paper log makes overlapping requests, missed returns and unclear availability harder to manage. CampusShelf provides one shared catalog and a controlled borrowing workflow.
@@ -54,17 +63,18 @@ Public registration always creates Student accounts, ignoring any supplied role.
 
 Open Library Search API: https://openlibrary.org/dev/docs/api/search . Backend sends only the entered book query, requests eight results and caches results for ten minutes. Requests are serialized to at most one new lookup per 1.1 seconds in this single-process classroom build. Imported work key/title/author/year are checked against the provider search result, rather than trusting arbitrary submitted metadata. Imported metadata is stored locally in PostgreSQL with its source work key. A work's first publication year may differ from the physical edition; library staff review their copy. Do not bulk harvest the provider.
 
-## Team and development plan — team must complete before submission
+## Team and development plan — proposed responsibilities
 
-Enter the actual 4–5 members and instructor-approved proposal status here. Do not claim invented people, reviews or contributions.
+The roster above was supplied by the team. The responsibilities below are suggestions for discussion, not a record of completed work. Confirm them together and record actual contributions in [the team work log](TEAM-WORK-LOG.md).
 
 | Responsibility | Actual member | Branch / PR evidence | Oral defense |
 |---|---|---|---|
-| Requirements, diagrams and acceptance criteria | To be assigned | To be recorded | Explain scope and relationships |
-| API/authentication/authorization | To be assigned | To be recorded | Demonstrate 401/403 and hashing |
-| EF Core/schema/circulation rules | To be assigned | To be recorded | Explain transactions and last-copy test |
-| React/TypeScript/Axios workflows | To be assigned | To be recorded | Trace request and response in browser |
-| Provider integration/testing/documentation | To be assigned (may be shared in a four-member team) | To be recorded | Demonstrate real lookup and failure |
+| React/TypeScript/Axios and integration coordination | Eugene Ricafort — proposed | Not yet recorded | Trace a browser request through the system |
+| ASP.NET authentication, authorization and accounts | Arjei Lacayanga — proposed | Not yet recorded | Demonstrate 401/403 and token revocation |
+| EF Core/PostgreSQL and circulation rules | John Lei Madrona — proposed | Not yet recorded | Explain relationships, transactions and last-copy test |
+| Open Library, verification and submission documentation | John Gilbert Sevilla — proposed | Not yet recorded | Demonstrate live lookup, failure behavior and test evidence |
+
+All four members review the requirements, diagrams and demo. Each proposed owner should review a different member's work. Change this allocation if your skills or preferences suggest a better fit.
 
 Recommended sequence: approve proposal → agree schema/contracts → implement a vertical borrowing slice → integrate provider → test negative paths → team review → rehearse defense. Use small meaningful feature branches and reviewed PRs; each member explains actual code they changed or verified. The initial generated implementation is not evidence of four people's contributions.
 

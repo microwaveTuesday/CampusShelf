@@ -3,7 +3,7 @@
 The foundation was generated with Codex assistance. Do not represent its initial creation as independent work by four or five students. Record actual contributions and disclose assistance under instructor policy.
 
 1. Complete the member/responsibility table in docs/PROPOSAL-AND-REQUIREMENTS.md.
-2. Create a shared GitHub repository owned by the team and invite actual members.
+2. Use [microwaveTuesday/CampusShelf](https://github.com/microwaveTuesday/CampusShelf) and invite the actual team members through GitHub's collaborator settings.
 3. Work in short feature branches with descriptive commits explaining why behavior changed.
 4. Open pull requests with the change, reproduction steps, tests run and limitations. Ask another member to review the relevant behavior and code.
 5. Keep migrations and API/TypeScript contracts synchronized. Never replace PostgreSQL with mock data for the assessment.
